@@ -40,7 +40,7 @@ with st.sidebar.expander("⚙️ Settings"):
     )
 
 with st.form(key='text_form'):
-    text_input = st.text_area("Enter Text", "Hello, how are you?")
+    text_input = st.text_area("Enter Text", "My name is Arya Stark. I want you to know that. The last thing you're ever going to see is a Stark smiling down at you as you die.")
     submit_button = st.form_submit_button(label='Generate Audio 🎵', type="primary")
 
 if submit_button is not None:
