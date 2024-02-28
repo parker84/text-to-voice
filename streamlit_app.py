@@ -59,9 +59,3 @@ if submit_button is not None:
             response.write_to_file("output.mp3")
         with open("output.mp3", "rb") as audio_file:
             st.audio(audio_file, format='audio/mp3')
-            st.download_button(
-                label="⬇️ Download Audio",
-                data=audio_file,
-                file_name="output.mp3",
-                mime="audio/mp3"
-            )
